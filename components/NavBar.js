@@ -4,7 +4,7 @@ import {signIn, signOut, useSession} from "next-auth/react"
 
 export default function NavBar() {
 	const { data: session } = useSession();
-	return <div className="container-fluid bg-dark pt-5">
+	return <div className="container-fluid bg-dark pt-5 pb-1">
 		<div className="container" style={{display: "flex", justifyContent: "space-between"}}>
 			<nav className="nav">
 				<Link href="/">

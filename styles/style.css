@@ -1,0 +1,10 @@
+.md-editor {
+    width: 100%;
+    min-height: 500px;
+}
+
+textarea {
+    appearance: none;
+    border-radius: 10px;
+    padding: 7px 10px;
+}
