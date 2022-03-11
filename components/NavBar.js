@@ -21,7 +21,9 @@ export default function NavBar() {
 				{session && <>
 					<Link href="/myaccount">
 						<a className="nav-link">My Account</a>
+						
 					</Link>
+					<img src={session.user.image} width="40px" style={{borderRadius:1000,marginRight: "10px"}} />
 					<button className="btn btn-danger" onClick={() => signOut()}>Sign Out</button>
 				</>}
 				{!session && (<a className="btn btn-primary" onClick={() => signIn()}>Sign In</a>)}
