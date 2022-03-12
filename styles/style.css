@@ -3,8 +3,9 @@
     min-height: 500px;
 }
 
-textarea {
+.textbox {
     appearance: none;
+	border: 1px black solid;
     border-radius: 10px;
     padding: 7px 10px;
 }
@@ -16,4 +17,10 @@ form input, form label {
 
 form button {
     margin-right: 5px;
+}
+
+.grid-col-2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap:1rem;
 }

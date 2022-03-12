@@ -16,9 +16,14 @@ export default function New() {
     return <div className="container pt-5">
         <h1>Submit a new markdown</h1>
         <p>Submitting as: {username}</p>
-        <textarea className="md-editor">
+		<div className="grid-col-2">
+			<textarea className="textbox md-editor">
 
-        </textarea>
+			</textarea>
+			<div className="textbox">
+				test
+			</div>
+		</div>
         <div style={{display: "flex", justifyContent: "space-between"}}>
             <select>
                 <option>General</option>
