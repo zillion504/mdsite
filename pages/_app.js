@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '../styles/style.css'
 import Link from 'next/link'
 import {useEffect} from "react"
-import {SessionProvider} from "next-auth/react"
+import {getSession, SessionProvider} from "next-auth/react"
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 

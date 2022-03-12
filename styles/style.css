@@ -10,13 +10,8 @@
     padding: 7px 10px;
 }
 
-form input, form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form button {
-    margin-right: 5px;
+form button, form input {
+    margin-left: 5px;
 }
 
 .grid-col-2{

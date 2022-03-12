@@ -10,9 +10,6 @@ export default function NavBar() {
 				<Link href="/">
 					<a className="nav-link">Home</a>
 				</Link>
-				<Link href="/favorites">
-					<a className="nav-link">Favorites</a>
-				</Link>
 				<Link href="/new">
 					<a className="btn btn-primary">New Markdown</a>
 				</Link>
@@ -24,8 +21,10 @@ export default function NavBar() {
 						
 					</Link>
 
-					{/*eslint-disable-next-line @next/next/no-img-element*/}
-					<img alt="account image" src={session.user.image} width="40px" style={{borderRadius:1000,marginRight: "10px"}} />
+					<Link href="/myaccount">
+						{/*eslint-disable-next-line @next/next/no-img-element*/}
+						<a><img alt="account image" src={session.user.image} width="40px" style={{borderRadius:1000,marginRight: "10px"}} /></a>
+					</Link>
 					<button className="btn btn-danger" onClick={() => signOut()}>Sign Out</button>
 				</>}
 				{!session && (<a className="btn btn-primary" onClick={() => signIn()}>Sign In</a>)}
